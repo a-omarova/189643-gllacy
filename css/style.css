@@ -1,17 +1,15 @@
 body {
 	font-size: 16px;
 	line-height: 22px;
-	color: white;
-	font-weight: medium;
+	color: #fff;
+	font-weight: 500; /*medium*/
 	font-family: Roboto;
 }
 
 h1 {
 	font-size: 35px;
 	line-height: 41px;
-	color: white;
-	font-weight: bold;
-	font-family: Roboto;
+	font-weight: 700; /*bold*/
 }
 
 
