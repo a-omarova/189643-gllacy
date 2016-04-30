@@ -88,7 +88,7 @@ nav {
 
 .product-wrapper {
 	width: 1146px;
-	margin-bottom: 40px;
+	/*margin-bottom: 40px;*/
 
 	background-color: #849d8f;
 }
@@ -98,9 +98,10 @@ nav {
 	width: 267px;
 	vertical-align: top;
 	margin-right: 26px;
+	margin-bottom: 40px;
 }
 
-.product-item:last-child {
+.product-item:nth-child(4n+4) {
 	margin-right: 0px;
 }
 
@@ -178,6 +179,43 @@ nav {
 	background-color: #ffec97;
 }
 
-footer {
-	/*background-color: black;*/
+.drop-down {
+	display: none;
 }
+
+.basket-drop-down {
+	display: none;
+}
+
+.block-sorting {
+	background-color: #b0c0b7;
+}
+
+.sorting-item {
+	float: left;
+	margin-bottom: 18px;
+}
+
+.sorting {
+	float: left;
+	width: 194px;
+	margin-right: 16px;
+}
+
+.price {
+	float: left;
+	width: 218px;
+	margin-right: 16px;
+}
+
+.fat-content {
+	float: left;
+	width: 418px;
+}
+
+.sorting-topings {
+	float: left;
+	margin-bottom: 40px;
+}
+
+
