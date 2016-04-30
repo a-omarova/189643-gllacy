@@ -4,10 +4,6 @@ body {
 	color: #fff;
 	font-weight: 500; /*medium*/
 	font-family: Roboto, Arial, sans-serif;
-	/*padding: 0px;
-	margin: 0px;*/
-
-	/*background-color: black;*/
 }
 
 h1 {
@@ -18,7 +14,6 @@ h1 {
 
 .clearfix::after {
   content: "";
-
   display: table;
   clear: both;
 }
@@ -26,7 +21,7 @@ h1 {
 .main-header {
 	margin-bottom: 10px;
 
-	background-color: #b8627e;
+	background-color: #859e90;
 } 
 
 .container {
@@ -35,27 +30,77 @@ h1 {
 }
 
 .logo {
-	min-height: 75px;
 	width: 153px;
 	float: left;
 
-	background-color: #c24e6a;
+	background-color: #859e90;
 }
 
-nav {
-	min-height: 75px;
-	width: 726px;
+.navigation {
 	float: left;
-
-	background-color: #e14971;
+	width: 726px;
+	
+	background-color: #859e90;
 }
+
+.main-navigation li {
+	display: inline-block;
+	padding-right: 30px;
+	list-style: none;
+	
+}
+
+.main-navigation a {
+	color: #fff;
+	text-decoration: none;
+	border-bottom: 1px solid #9eb3a8;
+} 
+
+.drop-down li {
+	display: none;
+}
+/*
+ .drop-down li:hover {
+	display: block;
+}*/
 
 .user-block {
-	min-height: 75px;
-	width: 267px;
 	float: right;
+	width: 267px;
+	
+	background-color: #9db1a6;
+}
 
-	background-color: #d539ab;
+.search-block {
+	display: block;
+	margin-top: 10px;
+	padding: 10px;
+	width: 23px;
+/*	width: 32px;
+	height: 32px;
+	background: #9db1a6;
+	-moz-border-radius: 50px;
+	-webkit-border-radius: 50px;
+	border-radius: 50px;*/
+
+	background-color: #d539ab
+}
+
+
+.search-block-drop-down {
+	display: none;
+}
+
+.account {
+	display: block;
+	margin-top: 10px;
+	padding: 10px;
+	width: 90px;
+	color: #fff;
+}
+
+.account-drop-down {
+	display: none;
 }
 
 .index-slider {
@@ -179,9 +224,7 @@ nav {
 	background-color: #ffec97;
 }
 
-.drop-down {
-	display: none;
-}
+
 
 .basket-drop-down {
 	display: none;
