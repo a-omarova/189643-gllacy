@@ -3,7 +3,11 @@ body {
 	line-height: 22px;
 	color: #fff;
 	font-weight: 500; /*medium*/
-	font-family: Roboto;
+	font-family: Roboto, Arial, sans-serif;
+	/*padding: 0px;
+	margin: 0px;*/
+
+	/*background-color: black;*/
 }
 
 h1 {
@@ -12,4 +16,168 @@ h1 {
 	font-weight: 700; /*bold*/
 }
 
+.clearfix::after {
+  content: "";
 
+  display: table;
+  clear: both;
+}
+
+.main-header {
+	margin-bottom: 10px;
+
+	background-color: #b8627e;
+} 
+
+.container {
+	width: 1146px;
+	margin: 0 auto;
+}
+
+.logo {
+	min-height: 75px;
+	width: 153px;
+	float: left;
+
+	background-color: #c24e6a;
+}
+
+nav {
+	min-height: 75px;
+	width: 726px;
+	float: left;
+
+	background-color: #e14971;
+}
+
+.user-block {
+	min-height: 75px;
+	width: 267px;
+	float: right;
+
+	background-color: #d539ab;
+}
+
+.index-slider {
+	width: 1146px;
+	height: 564px;
+	visibility: hidden;
+
+	background-color: #b482cb;
+}
+
+.banner-wrapper {
+	margin-bottom: 42px;
+
+	background-color: #fea214;
+}
+
+.raspberry {
+	float: left;
+	width: 560px;
+	min-height: 229px;
+	background-image: url("raspberry-banner.png");
+}
+
+.chocolate {
+	float: right;
+	width: 560px;
+	min-height: 229px;
+	background-image: url("chocolate-banner.png")
+}
+
+.product-wrapper {
+	width: 1146px;
+	margin-bottom: 40px;
+
+	background-color: #849d8f;
+}
+
+.product-item {
+	float: left;
+	width: 267px;
+	vertical-align: top;
+	margin-right: 26px;
+}
+
+.product-item:last-child {
+	margin-right: 0px;
+}
+
+.about-us {
+	width: 1146px;
+	min-height: 247px;
+	background-image: url("wafer.jpg");
+	background-repeat: repeat;
+}
+
+.new-blog {
+	float: left;
+	width: 560px;
+	height: 220px;
+	background-image: url("blog-background.png");
+}
+
+.post-dispatch {
+	float: right;
+	width: 560px;
+	height: 220px;
+	background-image: url("post-dispatch.png");
+}
+
+.map-wrapper {
+	background-color: #fe7;
+}
+
+.map + .container {
+	padding: 62px 0;
+}
+
+.address {
+	width: 244px;
+	min-height: 307px;
+	background-color: #aacbd9;
+	padding: 30px;
+	margin-left: 842px;
+}
+
+.box-feedback {
+	display: none;
+}
+
+.main-footer {
+	padding-top: 21px;
+
+	background-color: #8aa806;
+}
+
+.footer-social {
+	float: left;
+	width: 186px;
+	margin-right: 100px;
+
+	background-color: #ffec97;
+}
+
+/*.social-btn {
+	float: left;
+}*/
+
+.footer-info {
+	float: left;
+	width: 327px;
+
+	background-color: #ffec97;
+
+}
+
+.footer-copyright {
+	float: right;
+	width: 192px;
+
+	background-color: #ffec97;
+}
+
+footer {
+	/*background-color: black;*/
+}
