@@ -36,20 +36,20 @@
 			</nav>
 			<div class="user-block">
 				<div class="search-block">
-					<img src="img/lupa.png" width="17" height="17" alt="lupa">
+						<img src="img/lupa.png" width="17" height="17" alt="lupa">
+						<div class="search-container">
+						<form>
+							<input type="text" class="search-box" name="search" placeholder="Что ищем?">
+						</form>
+					</div>
 				</div>
-						<!-- <div class="search-block-drop-down"> -->
-							<form>
-								<input type="text" class="search-box" name="search" placeholder="Что ищем?">
-							</form>
-						<!-- </div> -->
 				<div class="account">
 					<img src="img/enter.png" width="20" height="19" alt="enter">
 					<span>Вход</span>
 					<div class="account-drop-down">
 						<form>
-							<input type="text" name="login" placeholder="Электронная почта">
-							<input type="password" name="password" placeholder="Пароль">
+							<input type="text" class="account-form" name="login" placeholder="Электронная почта">
+							<input type="password" class="account-form" name="password" placeholder="Пароль">
 							<input type="submit" class="btn account-btn" value="Войти">
 							<a href="#">Забыли пароль?</a>
 							<a href="#">Новая регистрация</a>
@@ -216,7 +216,9 @@
 		</div>
 	</main>
 	<div class="map-wrapper">
-		<div class="map"></div>
+		<div class="map">
+			<img src="img/map.png" width="1200" height="430" alt="map">
+		</div>
 		<div class="container">	
 			<div class="address">
 				<p>
