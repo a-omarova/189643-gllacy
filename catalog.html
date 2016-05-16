@@ -110,9 +110,9 @@
 		<h1>Сливочное мороженое</h1>
 		<div class="block-sorting clearfix">
 			<form>
-				<div class="sorting-item">
-					<div class="sorting">
-						Сортировка:
+				<div class="sorting-item clearfix">
+					<div class="sorting clearfix">
+						<p>Сортировка:</p>
 						<select name="criterion">
 							<option>По популярности</option>
 							<option>Сначала недорогие</option>
@@ -120,31 +120,34 @@
 							<option>По жирности</option>
 						</select>
 					</div>
-					<div class="price-sorting">
+					<div class="price-sorting clearfix">
 							Цена: 100 руб. - 500 руб.
 					</div>
-					<div class="fat-content">
-						Жирность:
-						<label>
-							<input type="radio" name="fat" value="0%">
-							0%
-						</label>
-						<label>
-							<input type="radio" name="fat" value="10%">
-							до 10%
-						</label>
-						<label>
-							<input type="radio" name="fat" value="30%">
-							до 30%
-						</label>
-						<label>
-							<input type="radio" name="fat" value="40%">
-							выше 30%
-						</label>
+					<div class="fat-content clearfix">
+						<p>Жирность:</p>
+						<div class="label-fat">
+							<label>
+								<input type="radio" name="fat" value="0%">
+								0%
+							</label>
+							<label>
+								<input type="radio" name="fat" value="10%">
+								до 10%
+							</label>
+							<label>
+								<input type="radio" name="fat" value="30%">
+								до 30%
+							</label>
+							<label>
+								<input type="radio" name="fat" value="40%">
+								выше 30%
+							</label>
+						</div>
 					</div>
 				</div>
 				<div class="sorting-topings clearfix">
-					Наполнители:
+					<p>Наполнители:</p>
+					<div class="topings clearfix">
 					<label>
 						<input type="checkbox" name="content">
 						шоколадные
