@@ -4,7 +4,7 @@ body {
 	color: #fff;
 	font-weight: 500; /*medium*/
 	font-family: Roboto, Arial, sans-serif;
-
+	
 	background-color: #859e90;
 }
 
@@ -421,14 +421,42 @@ li .first-item a {
 
 /*слайдер*/
 
-.container .index-slider {
-	background-color: #849d8f;
-	background-image: url("ice-cream-slider1.png");
-	background-repeat: no-repeat;
-	background-position: top center;
+body > input[type="radio"] {
+  display: none;
 }
 
-.index-slider {
+.site-wrapper {
+	background-color: #849d8f;
+	background-image: url(../img/ice-cream-slider1.png);
+	background-repeat: no-repeat;
+	background-position: top center;
+
+	transition: background-image 0.5s ease, background-color 0.5s ease;
+}
+
+.site-wrapper:before,
+.site-wrapper:after {
+  content: "";
+
+  visibility: hidden;
+}
+
+.site-wrapper:before,
+.site-wrapper:after {
+  background-image: url(../img/ice-cream-slider3.png);
+}
+
+.site-wrapper:after {
+  background-image: url(../img/ice-cream-slider2.png);
+}
+
+.content-wrapper {
+  width: 900px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.slider {
   position: relative;
 
   padding-top: 270px;
@@ -437,82 +465,107 @@ li .first-item a {
   color: #ffffff;
 }
 
+.slide {
+  display: none;
+  margin-bottom: 40px;
+}
+
 .slide-title {
-	width: 700px;
-	margin: 0 auto;
-	margin-bottom: 30px;
-	font-weight: 800;
-	font-size: 60px;
+  width: 700px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+	line-height: 60px;
+  font-weight: 800;
+  font-size: 60px;
 }
 
-.slider-btn {
-	display: inline-block;
-	padding: 12px 50px;
-	font-weight: 600;
-	font-size: 31px;
-	line-height: 41px;
-	vertical-align: top;
-	color: #ffffff;
-	text-decoration: none;
-	text-shadow: 0 2px 5px rgba(160, 32, 11, 0.76);
-	background: #f26843;
-	background: -moz-linear-gradient(top, #f26843 0%, #e74a35 100%);
-	background: -webkit-linear-gradient(top, #f26843 0%, #e74a35 100%);
-	background: linear-gradient(to bottom, #f26843 0%, #e74a35 100%);
-	border-radius: 100px;
-	box-shadow: 0 2px 2px rgba(172, 16, 0, 0.64);
+.slide-btn {
+  display: inline-block;
+  padding: 12px 50px;
+
+  font-weight: 600;
+  font-size: 31px;
+  line-height: 41px;
+  vertical-align: top;
+  color: #ffffff;
+  text-decoration: none;
+  text-shadow: 0 2px 5px rgba(160, 32, 11, 0.76);
+
+  background: #f26843;
+  background:    -moz-linear-gradient(top, #f26843 0%, #e74a35 100%);
+  background: -webkit-linear-gradient(top, #f26843 0%, #e74a35 100%);
+  background:         linear-gradient(to bottom, #f26843 0%, #e74a35 100%);
+  border-radius: 100px;
+  box-shadow: 0 2px 2px rgba(172, 16, 0, 0.64);
 }
 
-.slider-btn:hover {
-	background: -moz-linear-gradient(top, #f58669 0%, #ec6f5e 100%);
-	background: -webkit-linear-gradient(top, #f58669 0%, #ec6f5e 100%);
-	background: linear-gradient(to bottom, #f58669 0%, #ec6f5e 100%);
-	box-shadow: 0 2px 2px rgba(172, 16, 0, 1);
+.slide-btn:hover {
+  background:    -moz-linear-gradient(top, #f58669 0%, #ec6f5e 100%);
+  background: -webkit-linear-gradient(top, #f58669 0%, #ec6f5e 100%);
+  background:         linear-gradient(to bottom, #f58669 0%, #ec6f5e 100%);
+  box-shadow: 0 2px 2px rgba(172, 16, 0, 1);
 }
 
-.slider-btn:active {
-	background: -moz-linear-gradient(top, #d84732 0%, #e1613e 100%);
-	background: -webkit-linear-gradient(top, #d84732 0%, #e1613e 100%);
-	background: linear-gradient(to bottom, #d84732 0%, #e1613e 100%);
-	box-shadow: inset 0 2px 2px rgba(172, 16, 0, 1);
+.slide-btn:active {
+  background:    -moz-linear-gradient(top, #d84732 0%, #e1613e 100%);
+  background: -webkit-linear-gradient(top, #d84732 0%, #e1613e 100%);
+  background:         linear-gradient(to bottom, #d84732 0%, #e1613e 100%);
+  box-shadow: inset 0 2px 2px rgba(172, 16, 0, 1);
 }
 
 .slider-controls {
-	position: absolute;
-	bottom: 25px;
-	left: 0;
-	z-index: 20;
+  position: absolute;
+  bottom: 25px;
+  left: 0;
+  z-index: 20;
 
-	font-size: 0;
-}
-
-.container > input[type="radio"] {
-	display: none;
-}
-
-.slide {
-  display: none;
+  font-size: 0;
 }
 
 .slider-controls label {
-	display: inline-block;
-	width: 17px;
-	height: 17px;
-	margin-right: 8px;
+  display: inline-block;
+  width: 17px;
+  height: 17px;
+  margin-right: 8px;
 
-	vertical-align: top;
+  vertical-align: top;
 
-	background-color: transparent;
-	border: 2px solid #ffffff;
-	border-radius: 50%;
-	cursor: pointer;
+  background-color: transparent;
+  border: 2px solid #ffffff;
+  border-radius: 50%;
+  cursor: pointer;
 }
 
-#btn-1:checked ~ .container #slide1,
-#btn-2:checked ~ .container #slide2,
-#btn-3:checked ~ .container #slide3 {
+#btn-1:checked ~ .site-wrapper #slide1,
+#btn-2:checked ~ .site-wrapper #slide2,
+#btn-3:checked ~ .site-wrapper #slide3 {
   display: block;
 }
+
+#btn-1:checked ~ .site-wrapper {
+  background-color: #849d8f;
+  background-image: url("ice-cream-slider1.png");
+}
+
+#btn-2:checked ~ .site-wrapper {
+  background-color: #8996a6;
+  background-image: url("ice-cream-slider2.png");
+}
+
+#btn-3:checked ~ .site-wrapper {
+  background-color: #9d8b84;
+  background-image: url("ice-cream-slider3.png");
+}
+
+#btn-1:checked ~ .site-wrapper label[for="btn-1"],
+#btn-2:checked ~ .site-wrapper label[for="btn-2"],
+#btn-3:checked ~ .site-wrapper label[for="btn-3"] {
+  background-color: #ffffff;
+}
+
+
+
+/*конец слайдера*/
 
 .breadcrumbs ul {
 	margin: 0;
@@ -551,7 +604,7 @@ li .first-item a {
 	float: left;
 	width: 540px;
 	min-height: 229px;
-	background-image: url("raspberry-banner.png");
+	background-image: url("../img/raspberry-banner.png");
 	padding-left: 20px;
 	position: relative;
 }
@@ -560,9 +613,15 @@ li .first-item a {
 	float: right;
 	width: 540px;
 	min-height: 229px;
-	background-image: url("chocolate-banner.png");
+	background-image: url("../img/chocolate-banner.png");
 	padding-left: 20px;
 	position: relative;
+}
+
+.banner-title {
+	font-size: 35px;
+	line-height: 30px;
+	font-weight: 700;
 }
 
 .banner-btn {
@@ -605,7 +664,7 @@ li .first-item a {
 	/*display: block;*/
 	color: #fff;
 	text-decoration: none;
-	border-bottom: 1px solid #9db1a5;
+	border-bottom: 0px solid #9db1a5;
 }
 
 .price {
@@ -652,7 +711,7 @@ li .first-item a {
 }
 
 .about-us {
-	background-image: url("wafer.jpg");
+	background-image: url("../img/wafer.jpg");
 	background-repeat: repeat;
 	padding: 26px 22px;
 	margin-bottom: 40px;
@@ -933,12 +992,6 @@ li .first-item a {
 	border-bottom: 1px solid #c2cec7; 
 }
 
-
-/*.block-sorting {
-	display: block;
-	/*background-color: #b0c0b7;*/
-}*/
-
 .sorting-item {
 	float: left;
 	margin-bottom: 18px;
@@ -1022,3 +1075,12 @@ li .first-item a {
 	line-height: 16px;
 	margin: 5px 10px;
 }
+
+/*svg*/
+
+.logo-svg-class {
+	fill: #fff;
+	fill-rule: evenodd;
+}
+
+
