@@ -142,6 +142,11 @@ li .first-item a {
 	display: block;
 }
 
+.cls-1 {
+										fill: #323232;
+										fill-rule: evenodd;
+}
+
 .user-block {
 	float: right;
 	margin-top: 10px;
